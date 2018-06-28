@@ -3,7 +3,7 @@ package com.ptrbrynt.firestorelivedata
 import android.arch.lifecycle.LiveData
 import com.google.firebase.firestore.CollectionReference
 
-class CollectionLiveData<T : FirestoreModel>(private val modelClass: Class<T>, private val collectionReference: CollectionReference) : LiveData<FirestoreResource<List<T>>>() {
+class CollectionLiveData<T : FirestoreModel>(private val modelClass: Class<T>, private val collectionReference: CollectionReference) : FirestoreLiveData<List<T>>() {
 
     override fun onActive() {
         super.onActive()
