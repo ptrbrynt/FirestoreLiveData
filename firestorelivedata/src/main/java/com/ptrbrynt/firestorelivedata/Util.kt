@@ -1,6 +1,5 @@
 package com.ptrbrynt.firestorelivedata
 
-import android.arch.lifecycle.LifecycleOwner
 import android.arch.lifecycle.LiveData
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
@@ -19,10 +18,6 @@ inline fun <reified T : FirestoreModel> DocumentReference.asLiveData(): Document
 
 inline fun <reified T : FirestoreModel> CollectionReference.asLiveData(): CollectionLiveData<T> {
     return CollectionLiveData(T::class.java, this)
-}
-
-fun <T> FirestoreLiveData<T>.observeResource(lifecycleOwner: LifecycleOwner, observer: ResourceObserver<T>) {
-    this.observe(lifecycleOwner, observer)
 }
 
 fun <T> Task<T>.asLiveData(): TaskLiveData<T> = TaskLiveData(this)

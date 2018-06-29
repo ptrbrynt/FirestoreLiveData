@@ -1,8 +1,9 @@
 package com.ptrbrynt.firestorelivedata
 
+import android.arch.lifecycle.LiveData
 import com.google.firebase.firestore.DocumentReference
 
-class DocumentLiveData<T: FirestoreModel>(private val modelClass: Class<T>, private val reference: DocumentReference): FirestoreLiveData<T>() {
+class DocumentLiveData<T: FirestoreModel>(private val modelClass: Class<T>, private val reference: DocumentReference): LiveData<FirestoreResource<T>>() {
 
     override fun onActive() {
         super.onActive()

@@ -1,8 +1,9 @@
 package com.ptrbrynt.firestorelivedata
 
+import android.arch.lifecycle.LiveData
 import com.google.firebase.firestore.Query
 
-class QueryLiveData<T : FirestoreModel>(private val modelClass: Class<T>, private val query: Query) : FirestoreLiveData<List<T>>() {
+class QueryLiveData<T : FirestoreModel>(private val modelClass: Class<T>, private val query: Query) : LiveData<FirestoreResource<List<T>>>() {
 
     override fun onActive() {
         super.onActive()
