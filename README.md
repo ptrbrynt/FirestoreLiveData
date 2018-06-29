@@ -6,7 +6,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/ptrbrynt/FirestoreLiveData.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/ptrbrynt/FirestoreLiveData.svg)
 ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)
-![Libraries.io for GitHub](https://img.shields.io/librariesio/github/ptrbrynt/FirestoreLiveData.svg)
 
 
 
