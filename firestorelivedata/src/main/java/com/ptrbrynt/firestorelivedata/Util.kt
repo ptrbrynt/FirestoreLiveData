@@ -18,6 +18,6 @@ inline fun <reified T: FirestoreModel> CollectionReference.asLiveData(): Firesto
     return CollectionLiveData(T::class.java, this)
 }
 
-fun <T: FirestoreModel> FirestoreLiveData<T>.observeResource(lifecycleOwner: LifecycleOwner, observer: ResourceObserver<T>) {
+fun <T> FirestoreLiveData<T>.observeResource(lifecycleOwner: LifecycleOwner, observer: ResourceObserver<T>) {
     this.observe(lifecycleOwner, observer)
 }

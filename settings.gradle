@@ -1,1 +1,1 @@
-include ':firestorelivedata'
+include ':firestorelivedata', ':firestorelivedatasample'
