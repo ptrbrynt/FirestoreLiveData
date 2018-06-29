@@ -133,7 +133,7 @@ task.observe(lifecycleOwner, Observer { taskResult ->
 
 Also included is a `LiveData` wrapper for the current `FirebaseAuth` state:
 ```kotlin
-FirebaseAuth.getInstance().currentUserLiveData.observe(lifecycleOwner, Observer { currentUser: FirebaseUser ->
+FirebaseAuth.getInstance().currentUserLiveData.observe(lifecycleOwner, Observer {
   // Handle auth state changes here
 })
 ```
