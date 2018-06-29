@@ -102,4 +102,26 @@ myDocument.update(mapOf(Pair("title", "Updated Title"), Pair("author", "New Auth
 
 ```
 
-All of these operations return `Task`s, so if you need to implement callbacks you can do so.
+## Bonus
+
+### `TaskResult` and `TaskLiveData`
+
+All the operations described above return `TaskLiveData` instances. These are `LiveData`s containing `TaskResult`s, which are a bit like `FirestoreResource`s, but for `Task`s!
+```kotlin
+val task = myDocument.update("title", "Updated Title")
+
+task.observe(lifecycleOwner, Observer { taskResult ->
+  val status: TaskStatus = taskResult.status // Either SUCCESS, CANCELLED, FAILED, or RUNNING
+  val data = taskResult.data // The data attached to the result of the task. Only present for add operations on collections, and will be the reference to the newly added item
+  val exception: Exception? = taskResult.exception // If an error occurred, this exception will provide information
+})
+```
+
+### Auth State LiveData
+
+Also included is a `LiveData` wrapper for the current `FirebaseAuth` state:
+```kotlin
+FirebaseAuth.getInstance().currentUserLiveData.observe(lifecycleOwner, Observer { currentUser: FirebaseUser ->
+  // Handle auth state changes here
+})
+```
