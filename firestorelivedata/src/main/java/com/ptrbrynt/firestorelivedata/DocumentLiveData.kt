@@ -2,6 +2,7 @@ package com.ptrbrynt.firestorelivedata
 
 import android.arch.lifecycle.LiveData
 import com.google.firebase.firestore.DocumentReference
+
 /**
  * An observable [LiveData] representing the current state of the data at a [DocumentReference].
  *
