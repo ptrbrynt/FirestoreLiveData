@@ -1,5 +1,7 @@
 
-[![JitPack](https://img.shields.io/jitpack/v/ptrbrynt/FirestoreLiveData.svg?style=for-the-badge)](https://jitpack.io/#ptrbrynt/FirestoreLiveData)
+[![JitPack](https://img.shields.io/jitpack/v/ptrbrynt/FirestoreLiveData.svg?style=for-the-badge)](https://jitpack.io/#ptrbrynt/FirestoreLiveData) 
+[![Codacy grade](https://img.shields.io/codacy/grade/3bd0348f9a5c48eaa6489ad66f7ae301.svg?style=for-the-badge)](https://www.codacy.com/app/ptrbrynt/FirestoreLiveData)
+
 
 
 # FirestoreLiveData
