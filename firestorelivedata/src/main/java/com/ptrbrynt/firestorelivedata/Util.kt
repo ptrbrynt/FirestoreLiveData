@@ -60,10 +60,4 @@ fun <T> Task<T>.asLiveData(): TaskLiveData<T> = TaskLiveData(this)
  * An observable [LiveData] representing the currently signed-in user, as a [FirebaseUser]
  */
 val FirebaseAuth.currentUserLiveData: LiveData<FirebaseUser>
-    get() {
-        return object : LiveData<FirebaseUser>() {
-            override fun onActive() {
-                this@currentUserLiveData.addAuthStateListener { postValue(it.currentUser) }
-            }
-        }
-    }
+    get() = FirebaseAuthLiveData(this)
