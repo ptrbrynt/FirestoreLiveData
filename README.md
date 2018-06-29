@@ -1,3 +1,7 @@
+
+![JitPack](https://img.shields.io/jitpack/v/ptrbrynt/FirestoreLiveData.svg?style=for-the-badge)
+
+
 # FirestoreLiveData
 
 Transforms Firebase Cloud Firestore queries, collections, and documents into `LiveData`.
