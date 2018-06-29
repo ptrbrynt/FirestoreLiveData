@@ -1,6 +1,8 @@
 package com.ptrbrynt.firestorelivedata
 
+import android.arch.lifecycle.LifecycleOwner
 import android.arch.lifecycle.LiveData
+import android.arch.lifecycle.Observer
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -61,3 +63,24 @@ fun <T> Task<T>.asLiveData(): TaskLiveData<T> = TaskLiveData(this)
  */
 val FirebaseAuth.currentUserLiveData: LiveData<FirebaseUser>
     get() = FirebaseAuthLiveData(this)
+
+/**
+ * Shortcut method to transform a [CollectionReference] into a [CollectionLiveData], and observe it.
+ */
+inline fun <reified T : FirestoreModel> CollectionReference.observe(lifecycleOwner: LifecycleOwner, observer: Observer<FirestoreResource<List<T>>>) {
+    this.asLiveData<T>().observe(lifecycleOwner, observer)
+}
+
+/**
+ * Shortcut method to transform a [Query] into a [QueryLiveData], and observe it.
+ */
+inline fun <reified T : FirestoreModel> Query.observe(lifecycleOwner: LifecycleOwner, observer: Observer<FirestoreResource<List<T>>>) {
+    this.asLiveData<T>().observe(lifecycleOwner, observer)
+}
+
+/**
+ * Shortcut method to transform a [DocumentReference] into a [DocumentLiveData], and observe it.
+ */
+inline fun <reified T : FirestoreModel> DocumentReference.observe(lifecycleOwner: LifecycleOwner, observer: Observer<FirestoreResource<T>>) {
+    this.asLiveData<T>().observe(lifecycleOwner, observer)
+}

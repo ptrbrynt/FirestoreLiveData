@@ -137,3 +137,14 @@ FirebaseAuth.getInstance().currentUserLiveData.observe(lifecycleOwner, Observer 
   // Handle auth state changes here
 })
 ```
+
+### Observe Queries, DocumentReference, and CollectionReferences directly
+
+Also included is a handy shortcut to translate `Query`s, `DocumentReference`s, and `CollectionReference`s into `LiveData` and observe them, as one function call!
+
+```kotlin
+val myQuery = db.collection("books").orderBy("published")
+myQuery.observe<Book>(lifecycleOwner, Observer { books: FirestoreResource<List<Book>> ->
+    // Here are the books!
+})
+```
