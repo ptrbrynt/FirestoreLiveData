@@ -1,5 +1,5 @@
 
-![JitPack](https://img.shields.io/jitpack/v/ptrbrynt/FirestoreLiveData.svg?style=for-the-badge)
+[![JitPack](https://img.shields.io/jitpack/v/ptrbrynt/FirestoreLiveData.svg?style=for-the-badge)](https://jitpack.io/#ptrbrynt/FirestoreLiveData)
 
 
 # FirestoreLiveData
