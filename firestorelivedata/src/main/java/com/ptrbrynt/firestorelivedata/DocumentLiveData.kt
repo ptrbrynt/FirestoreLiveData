@@ -16,4 +16,12 @@ class DocumentLiveData<T: FirestoreModel>(private val modelClass: Class<T>, priv
         }
     }
 
+    fun set(item: T): TaskLiveData<Void> = reference.set(item).asLiveData()
+
+    fun update(fields: Map<String, Any>): TaskLiveData<Void> = reference.update(fields).asLiveData()
+
+    fun update(field: String, value: Any): TaskLiveData<Void> = reference.update(field, value).asLiveData()
+
+    fun delete(): TaskLiveData<Void> = reference.delete().asLiveData()
+
 }

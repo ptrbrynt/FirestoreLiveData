@@ -1,7 +1,7 @@
 package com.ptrbrynt.firestorelivedata
 
-import android.arch.lifecycle.LiveData
 import com.google.firebase.firestore.CollectionReference
+import com.google.firebase.firestore.DocumentReference
 
 class CollectionLiveData<T : FirestoreModel>(private val modelClass: Class<T>, private val collectionReference: CollectionReference) : FirestoreLiveData<List<T>>() {
 
@@ -18,5 +18,7 @@ class CollectionLiveData<T : FirestoreModel>(private val modelClass: Class<T>, p
             }
         }
     }
+
+    fun add(item: T): TaskLiveData<DocumentReference> = collectionReference.add(item).asLiveData()
 
 }

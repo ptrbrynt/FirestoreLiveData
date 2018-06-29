@@ -35,6 +35,7 @@ dependencies {
     implementation 'com.android.support:support-v4:28.0.0-alpha3'
 
     implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
     implementation 'com.google.firebase:firebase-firestore:17.0.2'
 
     implementation 'android.arch.lifecycle:livedata:1.1.1'
