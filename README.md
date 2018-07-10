@@ -6,6 +6,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/ptrbrynt/FirestoreLiveData.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/ptrbrynt/FirestoreLiveData.svg)
 ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)
+![Libraries.io for GitHub](https://img.shields.io/librariesio/github/ptrbrynt/FirestoreLiveData.svg)
+
 
 
 
@@ -15,6 +17,16 @@
 Transforms Firebase Cloud Firestore queries, collections, and documents into `LiveData`.
 
 ## Getting Started
+
+First, add the JitPack repository to your **project-level** `build.gradle` file:
+```gradle
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
 
 To add FirestoreLiveData to your app, add the following dependency to your module's `build.gradle` file:
 ```gradle
