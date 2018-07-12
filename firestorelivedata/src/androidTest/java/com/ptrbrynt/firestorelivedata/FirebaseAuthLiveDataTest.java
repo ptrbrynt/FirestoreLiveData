@@ -17,8 +17,8 @@ public class FirebaseAuthLiveDataTest {
 
     private final static FirebaseOptions options = new FirebaseOptions.Builder()
             .setApplicationId("com.ptrbrynt.firestorelivedata")
-            .setProjectId("firestorelivedatatest")
-            .setApiKey("AIzaSyDYF4ehojGr5nDWOvYRdAShUq06aIFwItU")
+            .setProjectId("blahblahblah")
+            .setApiKey("blahblahblah")
             .build();
 
     @BeforeClass
