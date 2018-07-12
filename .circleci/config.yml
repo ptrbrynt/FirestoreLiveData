@@ -62,7 +62,7 @@ jobs:
             name: Run unit tests
             command: bundle exec fastlane android test
         - store_artifacts:
-            path: app/build/reports/
+            path: firestorelivedata/build/reports/
             destination: /reports/
         - store_test_results:
             path: app/build/test-results/
@@ -81,7 +81,7 @@ jobs:
             name: Code coverage report
             command: bundle exec fastlane android coverage
         - store_artifacts:
-            path: app/build/reports/
+            path: firestorelivedata/build/reports/
             destination: /reports/
 
 
