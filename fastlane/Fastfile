@@ -5,4 +5,8 @@ platform :android do
   lane :test do
     gradle(task: "test")
   end
+
+  lane :coverage do
+    gradle(task: "jacocoTestReport")
+  end
 end
