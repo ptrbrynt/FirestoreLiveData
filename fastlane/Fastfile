@@ -8,5 +8,6 @@ platform :android do
 
   lane :coverage do
     gradle(task: "jacocoTestReport")
+    sh("java -jar codacy-coverage-reporter-4.0.1-assembly.jar report -r firestorelivedata/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml -l Kotlin")
   end
 end
