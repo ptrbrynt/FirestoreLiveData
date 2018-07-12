@@ -2,6 +2,7 @@
 [![JitPack](https://img.shields.io/jitpack/v/ptrbrynt/FirestoreLiveData.svg)](https://jitpack.io/#ptrbrynt/FirestoreLiveData) 
 ![CircleCI](https://img.shields.io/circleci/project/github/ptrbrynt/FirestoreLiveData.svg)
 [![Codacy grade](https://img.shields.io/codacy/grade/3bd0348f9a5c48eaa6489ad66f7ae301.svg)](https://www.codacy.com/app/ptrbrynt/FirestoreLiveData)
+![Codacy coverage](https://img.shields.io/codacy/coverage/3bd0348f9a5c48eaa6489ad66f7ae301.svg)
 ![license](https://img.shields.io/github/license/ptrbrynt/FirestoreLiveData.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ptrbrynt/FirestoreLiveData.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/ptrbrynt/FirestoreLiveData.svg)
