@@ -90,3 +90,4 @@ workflows:
   workflow:
     jobs:
         - test_unit
+        - coverage
