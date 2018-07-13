@@ -1,7 +1,7 @@
-[![JitPack](https://img.shields.io/jitpack/v/ptrbrynt/FirestoreLiveData.svg)](https://jitpack.io/#ptrbrynt/FirestoreLiveData) 
-![CircleCI](https://img.shields.io/circleci/project/github/ptrbrynt/FirestoreLiveData.svg)
-[![Codacy grade](https://img.shields.io/codacy/grade/3bd0348f9a5c48eaa6489ad66f7ae301.svg)](https://www.codacy.com/app/ptrbrynt/FirestoreLiveData)
-![Codacy coverage](https://img.shields.io/codacy/coverage/3bd0348f9a5c48eaa6489ad66f7ae301.svg)
+[![Release](https://jitpack.io/v/ptrbrynt/FirestoreLiveData.svg)](https://jitpack.io/#ptrbrynt/FirestoreLiveData)
+![CircleCI](https://circleci.com/gh/ptrbrynt/FirestoreLiveData.svg?style=shield)
+[![Codacy Grade](https://api.codacy.com/project/badge/Grade/3bd0348f9a5c48eaa6489ad66f7ae301)](https://www.codacy.com/app/ptrbrynt/FirestoreLiveData?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ptrbrynt/FirestoreLiveData&amp;utm_campaign=Badge_Grade)
+[![Codacy Coverage](https://api.codacy.com/project/badge/Coverage/3bd0348f9a5c48eaa6489ad66f7ae301)](https://www.codacy.com/app/ptrbrynt/FirestoreLiveData?utm_source=github.com&utm_medium=referral&utm_content=ptrbrynt/FirestoreLiveData&utm_campaign=Badge_Coverage)
 ![license](https://img.shields.io/github/license/ptrbrynt/FirestoreLiveData.svg)
 ![Libraries.io for GitHub](https://img.shields.io/librariesio/github/ptrbrynt/FirestoreLiveData.svg)
 
