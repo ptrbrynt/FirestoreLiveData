@@ -5,8 +5,12 @@ import org.junit.Test
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 
+/**
+ * Tests the [TaskResult] class
+ */
 class TaskResultTest {
 
+    /** Tests the success state **/
     @Test
     fun success() {
         val result = TaskResult.success("hello")
@@ -15,6 +19,7 @@ class TaskResultTest {
         assertEquals(result.exception, null)
     }
 
+    /** Tests the failure state **/
     @Test
     fun failure() {
         val result = TaskResult.failure<String>(IllegalStateException())
@@ -23,6 +28,7 @@ class TaskResultTest {
         assertTrue(result.exception is IllegalStateException)
     }
 
+    /** Tests the cancelled state **/
     @Test
     fun cancelled() {
         val result = TaskResult.cancelled<String>()
@@ -31,6 +37,7 @@ class TaskResultTest {
         assertEquals(result.exception, null)
     }
 
+    /** Tests the running state **/
     @Test
     fun running() {
         val result = TaskResult.running<String>()
