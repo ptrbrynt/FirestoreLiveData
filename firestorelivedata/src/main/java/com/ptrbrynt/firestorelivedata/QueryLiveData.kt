@@ -1,6 +1,7 @@
 package com.ptrbrynt.firestorelivedata
 
 import android.arch.lifecycle.LiveData
+import android.util.Log
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.Query
 
@@ -27,6 +28,8 @@ class QueryLiveData<T : FirestoreModel>(private val modelClass: Class<T>, privat
         query.addSnapshotListener { querySnapshot, firebaseFirestoreException ->
             if (firebaseFirestoreException != null) {
                 postValue(FirestoreResource.error(firebaseFirestoreException))
+                Log.w("QueryLiveData", firebaseFirestoreException.localizedMessage)
+                firebaseFirestoreException.printStackTrace()
             } else {
                 val documents = querySnapshot?.documents.orEmpty()
                 val models = documents.mapNotNull { doc -> doc.toObject(modelClass)?.apply { id = doc.id } }

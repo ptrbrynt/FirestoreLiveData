@@ -1,6 +1,7 @@
 package com.ptrbrynt.firestorelivedata
 
 import android.arch.lifecycle.LiveData
+import android.util.Log
 import com.google.firebase.firestore.DocumentReference
 
 /**
@@ -26,6 +27,8 @@ class DocumentLiveData<T: FirestoreModel>(private val modelClass: Class<T>, priv
         reference.addSnapshotListener { documentSnapshot, firebaseFirestoreException ->
             if (firebaseFirestoreException != null) {
                 postValue(FirestoreResource.error(firebaseFirestoreException))
+                Log.w("DocumentLiveData", firebaseFirestoreException.localizedMessage)
+                firebaseFirestoreException.printStackTrace()
             } else {
                 postValue(FirestoreResource.success(documentSnapshot?.toObject(modelClass)?.apply { id = documentSnapshot.id }))
             }
