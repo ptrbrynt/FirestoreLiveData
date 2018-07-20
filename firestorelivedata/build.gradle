@@ -49,7 +49,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-auth:16.0.2'
-    implementation 'com.google.firebase:firebase-firestore:17.0.2'
+    implementation 'com.google.firebase:firebase-firestore:17.0.3'
 
     implementation 'android.arch.lifecycle:livedata:1.1.1'
     kapt 'android.arch.lifecycle:compiler:1.1.1'
