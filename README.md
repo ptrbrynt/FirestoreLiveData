@@ -2,6 +2,8 @@
 ![CircleCI](https://circleci.com/gh/ptrbrynt/FirestoreLiveData.svg?style=shield)
 [![Codacy Grade](https://api.codacy.com/project/badge/Grade/3bd0348f9a5c48eaa6489ad66f7ae301)](https://www.codacy.com/app/ptrbrynt/FirestoreLiveData?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ptrbrynt/FirestoreLiveData&amp;utm_campaign=Badge_Grade)
 [![Codacy Coverage](https://api.codacy.com/project/badge/Coverage/3bd0348f9a5c48eaa6489ad66f7ae301)](https://www.codacy.com/app/ptrbrynt/FirestoreLiveData?utm_source=github.com&utm_medium=referral&utm_content=ptrbrynt/FirestoreLiveData&utm_campaign=Badge_Coverage)
+[![Libraries.io for GitHub](https://img.shields.io/librariesio/github/ptrbrynt/FirestoreLiveData.svg)](https://libraries.io/github/ptrbrynt/FirestoreLiveData)
+
 
 
 
