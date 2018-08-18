@@ -1,6 +1,6 @@
 package com.ptrbrynt.firestorelivedata
 
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import com.google.android.gms.tasks.Task
 
 /**

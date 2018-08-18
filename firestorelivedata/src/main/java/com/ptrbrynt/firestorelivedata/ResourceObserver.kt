@@ -1,6 +1,6 @@
 package com.ptrbrynt.firestorelivedata
 
-import android.arch.lifecycle.Observer
+import androidx.lifecycle.Observer
 
 /**
  * Utility interface providing easy callbacks for each possible state of a [FirestoreResource].
