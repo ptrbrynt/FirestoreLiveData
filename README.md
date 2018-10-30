@@ -32,13 +32,13 @@ implementation "com.github.ptrbrynt:FirestoreLiveData:$latestVersion"
 
 ## Creating Models
 
-The first step in transforming your Firestore queries is to create a model class. All model classes must implement `FirestoreModel` in order to work with this library:
+The first step in transforming your Firestore queries is to create a model class. All model classes must extend `FirestoreModel` in order to work with this library:
 ```kotlin
 data class Book(
   var title: String? = null,
   var author: String? = null,
   var timestamp: Timestamp? = null
-): FirestoreModel
+): FirestoreModel()
 ```
 
 It's also important **not** to include an 'id' property in your models, as this is included in `FirestoreModel`.
