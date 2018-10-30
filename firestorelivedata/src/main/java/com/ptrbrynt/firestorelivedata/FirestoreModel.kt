@@ -11,7 +11,7 @@ import com.google.firebase.firestore.IgnoreExtraProperties
  * @property id The document key
  */
 @IgnoreExtraProperties
-interface FirestoreModel {
+abstract class FirestoreModel {
     @get:Exclude
-    var id: String?
+    var id: String? = null
 }
